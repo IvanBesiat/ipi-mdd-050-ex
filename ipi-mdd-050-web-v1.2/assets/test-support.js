@@ -10196,7 +10196,7 @@ define('ember-cli-test-loader/test-support/index', ['exports'], function (export
   }();
 
   exports.default = TestLoader;
-  ;
+
 });
 define('ember-qunit/adapter', ['exports', 'qunit'], function (exports, _qunit) {
   'use strict';

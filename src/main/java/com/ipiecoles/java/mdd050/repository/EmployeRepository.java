@@ -31,4 +31,6 @@ public interface EmployeRepository extends JpaRepository<Employe, Long> {
 
     @Query(value = "SELECT * FROM Employe WHERE salaire > (SELECT avg(e2.salaire) FROM Employe e2)", nativeQuery = true)
     List<Employe> findEmployePlusRiches();
+
+    boolean existsByMatricule(String matricule);
 }
